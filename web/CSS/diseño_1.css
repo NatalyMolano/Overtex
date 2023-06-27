@@ -1,0 +1,284 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/03/2023, 11:33:11 PM
+    Author     : natal
+*/
+
+
+.tituloUsuario
+{
+   color: white;
+   font-size:30px;
+   font-family:Arial;
+   text-align: right;
+}
+#menus
+{
+   background: url(../IMG/fondosMenu.jpg);
+   background-repeat: no-repeat;
+}
+    
+.botonSesion
+{
+    width: 10%;
+    height: 35px;
+    border-radius: 6px;
+    background: orange; 
+    font-family:Arial;
+    font-weight: 600px;
+}
+.menuSesion
+{
+  text-align: right;
+  margin-right: 1%;
+  padding: 1%;
+
+}
+.tituloUsuario
+{
+  font-family: arial;
+  font-size: 20px;
+  color: black;
+}
+a
+{
+font-size: 20px;
+ color: white;
+ padding: 30px;
+}
+a:link {
+ text-decoration: none;
+}
+a:hover {
+  
+background: orange;
+}
+
+#login
+{
+ background:url(../IMG/fondoLogin.jpg); 
+}
+.usuario
+{
+  
+    width: 330px;
+    background:#090909;
+    color:ffffff;
+    margin: auto;
+    margin-top: 0px;
+    border-top:70px solid #141414;
+    border-right:70px solid #141414;
+    border-left:35px solid #141414;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+.camposUsuario
+{
+    color: white;
+    padding-left:100px;
+    font-size:20px;
+    font-family:Arial;
+}
+.botonRegistrar
+{
+    width: 110%;
+    height: 45px;
+    border-radius: 6px;
+    background: orange;
+    color:#ffffff;   
+    font-family:Arial;
+    font-weight: 900;
+    font-size: 14px;
+}
+ #entradaUsuario
+ {
+   width:360px;
+   height:30px;
+   border-radius: 10px;
+   font-family:Arial;
+   font-weight: 700;
+   font-size: 14px;
+ }
+
+ 
+.VendedorUser
+{
+     font-family: Arial;
+    font-size:200%;
+    text-align: center;
+    overflow: hidden;
+    background:#090909;
+    color:white;
+    margin: auto;
+    margin-top: 70x;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+
+.GerenteUser
+{
+    font-family: Arial;
+    font-size:200%;
+    text-align: center;
+    overflow: hidden;
+    background:#090909;
+    color:white;
+    margin: auto;
+    margin-top: 70x;
+    border-radius: 6px;
+    opacity: 0.9;
+    
+}
+.AdminUser
+{
+    font-family: Arial;
+    font-size:200%;
+    text-align: center;
+    overflow: hidden;
+    background:#090909;
+    color:white;
+    margin: auto;
+    margin-top: 70x;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+#cuadro
+{
+    width: 330px;
+    background:#090909;
+    color:ffffff;
+    margin: auto;
+    margin-top: 180px;
+    padding: 5px 5px 30px 5px;
+    border-top:35px solid #141414;
+    border-right:35px solid #141414;
+    border-left:35px solid #141414;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+.entrada
+{
+   width:320px;
+   height:35px;
+   border-radius: 6px;
+   font-family:Arial;
+   font-weight: 700;
+   font-size: 14px;
+  }
+  .boton
+  {
+    width: 324px;
+    height: 35px;
+    border-radius: 6px;
+    background: orange;
+    color:#ffffff;   
+    font-family:Arial;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  #tituloLogin
+  {
+   color: white;
+   font-size:30px;
+   font-family:Arial;
+   text-align: center;
+  }
+  #subtitulo1
+  {
+    color: white;
+    padding-left:80px;
+    font-size:20px;
+    font-family:Arial;
+  
+  }
+#subtitulo2
+{
+   color: white; 
+   padding-left:115px;
+   font-size:20px;
+   font-family:Arial;
+ 
+}  
+
+a
+{
+ color: white;
+ padding: 30px;
+}
+a:link {
+ text-decoration: none;
+}
+a:hover {
+  
+background: orange;
+}
+.btnRegresar
+{
+    color:#ffffff;   
+    background: orange;
+    height: 35px
+ 
+}
+.BodyRegistrarUsu
+{
+   background: url(../IMG/RegistrarUsuario.jpg);
+   background-repeat: no-repeat;
+}
+.RegistrarUsario
+{
+    font-family: Arial;
+    text-align: center;
+   color: white;
+   width: 330px;
+    background:#090909;
+    color:ffffff;
+    margin: auto;
+    padding: 5px 5px 30px 5px;
+    border-top:35px solid #141414;
+    border-right:35px solid #141414;
+    border-left:35px solid #141414;
+    border-radius: 6px;
+    opacity: 0.9;  
+}
+#img {
+    display: none;
+}
+ .boton
+  {
+    width: 324px;
+    height: 35px;
+    border-radius: 6px;
+    background: orange;
+    color:#ffffff;   
+    font-family:Arial;
+    font-weight: 700;
+    font-size: 14px;
+  }
+#entradaUsuario
+ {
+   width:340;
+   height:10%;
+   border-radius: 10px;
+   font-family:Arial;
+   font-weight: 100;
+   font-size: 14px;
+       
+   }
+
+.desplazado {
+    transform: translateY(-100%);
+}
+
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      

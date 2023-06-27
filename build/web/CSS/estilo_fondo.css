@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/05/2023, 02:57:19 PM
+    Author     : APRENDIZ
+*/
+
+.btn-custom {
+
+    color: #ffffff; /* Color de texto personalizado */
+
+}
+
+.botones-button {
+    background-color: #FFFFFF; /* Color de fondo al pasar el cursor o enfocar */
+    color: #EF6737; /* Color de texto al pasar el cursor o enfocar */
+    border-color: #EF6737; /* Color de fondo personalizado */
+}
+
+.botones-naranja {
+    background-color: #EF6737; /* Color de fondo al pasar el cursor o enfocar */
+    color: #ffffff; /* Color de texto al pasar el cursor o enfocar */
+    border-color: #EF6737; /* Color de fondo personalizado en los estados hover y focus */
+}
+.botones-naranja:hover,
+.botones-naranja:focus  {
+    background-color: #EF6737; /* Color de fondo al pasar el cursor o enfocar */
+    color: #ffffff; /* Color de texto al pasar el cursor o enfocar */
+    border-color: #EF6737; /* Color de fondo personalizado en los estados hover y focus */
+}
+
+.botones-button:hover,
+.botones-button:focus {
+    background-color: #EF6737; /* Color de fondo al pasar el cursor o enfocar */
+    color: #ffffff; /* Color de texto al pasar el cursor o enfocar */
+    border-color: #EF6737; /* Color de fondo personalizado en los estados hover y focus */
+}
+
+.botonesgris-button {
+
+    color: #4C4C4C; /* Color de texto al pasar el cursor o enfocar */
+    border-color: #4C4C4C; /* Color de fondo personalizado */
+}
+
+.botonesgris-button:hover,
+.botonesgris-button:focus {
+    background-color: #4C4C4C; /* Color de fondo al pasar el cursor o enfocar */
+    color: #ffffff; /* Color de texto al pasar el cursor o enfocar */
+    border-color: #4C4C4C; /* Color de fondo personalizado en los estados hover y focus */
+}
+
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: #EF6737; /* Color de fondo al pasar el cursor o enfocar */
+    color: #ffffff; /* Color de texto al pasar el cursor o enfocar */
+    border-color: #EF6737; /* Color del borde al pasar el cursor o enfocar */
+}
+
+.dropdown-content a {
+    color: #ffffff;; /* Color de texto normal */
+    background-color: #4C4C4C;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    color: #ffffff;; /* Color de texto al pasar el cursor o enfocar */
+    background-color: #EF6737; /* Color de fondo al pasar el cursor o enfocar */
+}
+
+.custom-div {
+    padding: 10px 20px 30px 100px; /* Borde de 1 píxel sólido de color negro */
+}

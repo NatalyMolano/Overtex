@@ -1,0 +1,324 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import ModeloVO.ClienteVO;
+import ModeloDAO.ClienteDAO;
+import ModeloVO.detalle_CompraVO;
+import ModeloDAO.detalle_CompraDAO;
+import ModeloDAO.ProductoDAO;
+import ModeloVO.ProductoVO;
+import ModeloDAO.ProveedoresDAO;
+import ModeloVO.ProveedoresVO;
+import ModeloDAO.CompraDAO;
+import ModeloVO.CompraVO;
+import java.util.ArrayList;
+
+public final class GerenteListarCliente_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Producto</title>\n");
+      out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp\" crossorigin=\"anonymous\">\n");
+      out.write("        <link href=\"CSS/diseño.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css\">\n");
+      out.write("        <link href=\"CSS/diseño.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>\n");
+      out.write("        <link href=\"https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css\" rel=\"stylesheet\"/>\n");
+      out.write("        <link href=\"https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css\" rel=\"stylesheet\"/>\n");
+      out.write("        <link href=\"https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css\" rel=\"stylesheet\"/>\n");
+      out.write("        <script>\n");
+      out.write("            function copiarDatos() {\n");
+      out.write("                var numeroid = document.getElementById(\"ND\").value;\n");
+      out.write("                var url = numeroid + '.pdf';\n");
+      out.write("                window.open(url, 'Download');\n");
+      out.write("            }\n");
+      out.write("        </script>\n");
+      out.write("        <style>\n");
+      out.write("            div.fixed {\n");
+      out.write("                position: fixed;\n");
+      out.write("                bottom: 0;\n");
+      out.write("                right: 0;\n");
+      out.write("                width: 100px;\n");
+      out.write("                height: 70px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <header class=\"site-header sticky-top py-1\" style=\"background-color: #333;\">\n");
+      out.write("            <nav class=\"container d-flex flex-column flex-md-row justify-content-between\" >\n");
+      out.write("                <h3 class=\"text-warning\">OVERTEX</h3>\n");
+      out.write("                <a  class=\"py-2 d-none d-md-inline-block\" href=\"Vista_Administrador.jsp\" class=\"text-warning\">Menu</a>\n");
+      out.write("                <div class=\"dropdown\">\n");
+      out.write("                    <button class=\"btn btn-outline-primary\">Producto</button>\n");
+      out.write("                    <div class=\"dropdown-content\">\n");
+      out.write("                        <a href=\"GerenteListarProducto.jsp\">Listar productos</a>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"dropdown\">\n");
+      out.write("                    <button class=\"btn btn-outline-primary\">Cliente</button>\n");
+      out.write("                    <div class=\"dropdown-content\">\n");
+      out.write("                        <a href=\"GerenteListarCliente.jsp\">Listar cliente</a>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"dropdown\">\n");
+      out.write("                    <button class=\"btn btn-outline-primary\">Compra</button>\n");
+      out.write("                    <div class=\"dropdown-content\">\n");
+      out.write("                        <a href=\"Compra_Nuevo.jsp\">Generar compra</a>\n");
+      out.write("                        <a href=\"AdministradorListarCompra.jsp\">Listar Compras</a>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"dropdown\">\n");
+      out.write("                    <button class=\"btn btn-outline-primary\">Proveedor</button>\n");
+      out.write("                    <div class=\"dropdown-content\">\n");
+      out.write("                        <a href=\"Proveedor_Registro.jsp\">Registro Proveedor</a>\n");
+      out.write("                        <a href=\"AdministradorListarProveedor.jsp\">Lista Proveedor</a>\n");
+      out.write("                    </div>\n");
+      out.write("                </div><div class=\"dropdown\">\n");
+      out.write("                    <button class=\"btn btn-outline-primary\">Venta</button>\n");
+      out.write("                    <div class=\"dropdown-content\">\n");
+      out.write("                        <a href=\"Venta_Nueva.jsp\">Registrar Venta</a>\n");
+      out.write("                        <a href=\"Venta_Consulta_1.jsp\">Consultar Venta</a>\n");
+      out.write("                        <a href=\"mod_ventaConsulta.jsp\">Modificaciones de la Venta</a>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"dropdown\">\n");
+      out.write("                    <button class=\"btn btn-outline-primary\">Ususario</button>\n");
+      out.write("                    <div class=\"dropdown-content\">\n");
+      out.write("                        <a href=\"registrarUsuario.jsp\">Registrar</a>\n");
+      out.write("                        <a href=\"UsuarioNuevo.jsp\">Modificar</a>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </nav>\n");
+      out.write("        </header>\n");
+      out.write("    <center><h1>Lista clientes</h1></center>\n");
+      out.write("    <div  class=\"d-flex justify-content-center align-items-center\">\n");
+      out.write("        <form method=\"post\" action=\"Cliente\">\n");
+      out.write("            <table id=\"example\" class=\"display nowrap\" style=\"width:100%\">\n");
+      out.write("                <thead>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <th scope=\"col\">#</th>\n");
+      out.write("                        <th scope=\"col\">Nombre</th>\n");
+      out.write("                        <th scope=\"col\">Telefono</th>\n");
+      out.write("                        <th scope=\"col\">Documento</th>\n");
+      out.write("                        <th scope=\"col\">Estado</th>\n");
+      out.write("                    </tr>\n");
+      out.write("                </thead>\n");
+      out.write("                <tbody>\n");
+      out.write("                    ");
+                            int con = 0;
+                        ClienteDAO cliDAO = new ClienteDAO();
+                        ClienteVO cliVO = new ClienteVO();
+
+                        ArrayList<ClienteVO> listarCliente = cliDAO.listar();
+
+                        for (int i = 0; i < listarCliente.size(); i++) {
+                            cliVO = listarCliente.get(i);
+                            con = con + 1;
+                    
+      out.write("\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>");
+      out.print(con);
+      out.write("</td>\n");
+      out.write("                        <td>");
+      out.print( cliVO.getCliNombre());
+      out.write("</td>\n");
+      out.write("                        <td>");
+      out.print(cliVO.getCliTelefono());
+      out.write("</td>\n");
+      out.write("                        <td>");
+      out.print(cliVO.getDocumento());
+      out.write("</td>\n");
+      out.write("                        <td>");
+      out.print(cliVO.getCliEstado());
+      out.write("</td>\n");
+      out.write("                    </tr>\n");
+      out.write("                    ");
+}
+      out.write("\n");
+      out.write("                </tbody>\n");
+      out.write("            </table>\n");
+      out.write("        </form>\n");
+      out.write("        <div class=\"fixed\">\n");
+      out.write("           \n");
+      out.write("            <form method=\"POST\" action=\"GeneradorReporte.jsp\" target=\"_blank\">\n");
+      out.write("                <input style=\"border-radius: 50%;\" class=\"btn btn-outline-primary\" type=\"submit\" value=\"PDF\">\n");
+      out.write("                <input type=\"hidden\" name=\"reportName\" value=\"cliente\">\n");
+      out.write("            </form>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        </div>\n");
+      out.write("    </div>\n");
+      out.write(" \n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe\" crossorigin=\"anonymous\"></script>\n");
+      out.write("    <script src=\"https://code.jquery.com/jquery-3.5.1.js\"></script>\n");
+      out.write("    <script src=\"https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js\"></script>\n");
+      out.write("    <script src=\"https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js\"></script>\n");
+      out.write("    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js\"></script>\n");
+      out.write("    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js\"></script>\n");
+      out.write("    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js\"></script>\n");
+      out.write("    <script src=\"https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js\"></script>\n");
+      out.write("    <script src=\"https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js\"></script>\n");
+      out.write("\n");
+      out.write("    <script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            $(document).ready(function () {\n");
+      out.write("                $('#example').DataTable({\n");
+      out.write("                    dom: 'Bfrtip',\n");
+      out.write("                    buttons: [\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'copy',\n");
+      out.write("                            text: 'Copiar',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                        },\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'excel',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                            text: 'Exportar a Excel'\n");
+      out.write("                        },\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'pdf',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                            text: 'Exportar a PDF'\n");
+      out.write("                        },\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'print',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                            text: 'Imprimir'\n");
+      out.write("                        }\n");
+      out.write("                    ]\n");
+      out.write("                });\n");
+      out.write("            });\n");
+      out.write("\n");
+      out.write("            $(document).ready(function () {\n");
+      out.write("                $('#mitabla').DataTable({\n");
+      out.write("                    dom: 'Bfrtip',\n");
+      out.write("                    buttons: [\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'copy',\n");
+      out.write("                            text: 'Copiar',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                        },\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'excel',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                            text: 'Exportar a Excel'\n");
+      out.write("                        },\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'pdf',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                            text: 'Exportar a PDF'\n");
+      out.write("                        },\n");
+      out.write("                        {\n");
+      out.write("                            extend: 'print',\n");
+      out.write("                            className: 'btn btn-primary',\n");
+      out.write("                            text: 'Imprimir'\n");
+      out.write("                        }\n");
+      out.write("                    ]\n");
+      out.write("                });\n");
+      out.write("            });\n");
+      out.write("\n");
+      out.write("            $(document).ready(function ()\n");
+      out.write("            {\n");
+      out.write("                $('#ejemplo').DataTable({\n");
+      out.write("                    language: {\n");
+      out.write("                        url: 'https://cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json',\n");
+      out.write("                    }\n");
+      out.write("                });\n");
+      out.write("\n");
+      out.write("            });\n");
+      out.write("\n");
+      out.write("    </script>\n");
+      out.write("    <style>\n");
+      out.write("        .modal-dialog {\n");
+      out.write("            max-width: 80%;\n");
+      out.write("        }\n");
+      out.write("        .modal-body {\n");
+      out.write("            max-height: 50vh;\n");
+      out.write("            overflow-y: auto;\n");
+      out.write("        }\n");
+      out.write("        .table {\n");
+      out.write("            width: 100%;\n");
+      out.write("        }\n");
+      out.write("    </style>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("</body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
